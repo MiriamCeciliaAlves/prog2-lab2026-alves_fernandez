@@ -1,0 +1,6 @@
+*.class
+*.log
+*.jar
+*.zip
+hs_err_pid*
+target/
