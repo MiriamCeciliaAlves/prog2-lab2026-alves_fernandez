@@ -1,0 +1,32 @@
+[
+  {
+    "identificador": 1,
+    "nombre": "Notebook Lenovo 14",
+    "categoria": "Notebook",
+    "activo": true,
+    "estadoPrestamo": "DISPONIBLE",
+    "responsable": "",
+    "diasPrestamo": 0,
+    "observaciones": "Incluye cargador."
+  },
+  {
+    "identificador": 2,
+    "nombre": "Proyector Epson X41",
+    "categoria": "Proyector",
+    "activo": true,
+    "estadoPrestamo": "PRESTADO",
+    "responsable": "Docente de prueba",
+    "diasPrestamo": 3,
+    "observaciones": "Con cable HDMI."
+  },
+  {
+    "identificador": 3,
+    "nombre": "Kit Arduino Uno",
+    "categoria": "Kit Arduino",
+    "activo": false,
+    "estadoPrestamo": "EN_REPARACION",
+    "responsable": "",
+    "diasPrestamo": 0,
+    "observaciones": "Placa con un pin dañado."
+  }
+]
