@@ -258,10 +258,4 @@ Ambos integrantes conocemos la solución completa y participamos en el video.
 
 ## Video explicativo
 
-Enlace público: [COMPLETAR: enlace de YouTube (público o no listado) o de Google Drive
-(«Cualquier persona con el enlace»)].
-
-Duración máxima de cinco minutos. Muestra el problema, la aplicación
-funcionando, una validación, los tres componentes nuevos, el recorrido de una
-operación por MVC, fachada y persistencia, y la conservación de los datos al
-cerrar y volver a abrir.
+Enlace público: 
