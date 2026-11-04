@@ -199,19 +199,19 @@ Pruebas manuales realizadas en Windows con Java 27.
 | Acción | Resultado esperado | Resultado obtenido |
 | --- | --- | --- |
 | Crear un equipo válido. | Aparece en el listado con un código nuevo. | Correcto. |
-| Registrar sin descripción. | Informa «La descripción del equipo es obligatoria» y permite corregir. | [COMPLETAR] |
-| Registrar como prestado sin responsable, o con días fuera de 1 a 7. | Informa el motivo y permite corregir. | [COMPLETAR] |
-| Prestar un equipo sin «En servicio» marcado. | Rechaza la operación: «No se puede prestar un equipo que está fuera de servicio». | [COMPLETAR] |
-| Seleccionar un equipo de la tabla. | Sus datos se cargan en el formulario. | [COMPLETAR] |
-| Modificar un equipo seleccionado. | Se actualiza conservando su código, sin duplicarlo. | [COMPLETAR] |
-| Modificar o eliminar sin seleccionar un equipo. | Pide seleccionar un equipo de la lista. | [COMPLETAR] |
-| Cancelar una eliminación y confirmar otra con un equipo de prueba. | Se conserva el primero y se elimina solo el confirmado. | [COMPLETAR] |
-| Buscar por texto (nombre o responsable). | Muestra solo los equipos que contienen el texto. | [COMPLETAR] |
-| Filtrar por categoría y por «Solo disponibles». | Muestra solo los equipos que cumplen los criterios. | [COMPLETAR] |
-| Limpiar el formulario. | Queda vacío, con estado «Disponible», listo para un nuevo registro. | [COMPLETAR] |
-| Crear y modificar datos, cerrar y volver a abrir. | Los cambios se recuperan desde el JSON. | Correcto. |
-| Iniciar sin `equipos.json` (renombrando el archivo). | La tabla aparece vacía y se puede registrar. | [COMPLETAR] |
-| Iniciar con un JSON inválido, usando una copia de prueba. | Informa el error sin cerrar la ventana ni modificar el archivo. | [COMPLETAR] |
+| Registrar sin descripción. | Informa «La descripción del equipo es obligatoria» y permite corregir. | Correcto: muestra el mensaje y no agrega el equipo. |
+| Registrar como prestado sin responsable. | Informa el motivo y permite corregir. | Correcto: muestra «Debe indicar el responsable del préstamo» y conserva lo escrito en el formulario. Los días no pueden quedar fuera de 1 a 7 porque el JSpinner los limita. |
+| Prestar un equipo sin «En servicio» marcado. | Rechaza la operación: «No se puede prestar un equipo que está fuera de servicio». | Correcto: muestra el mensaje y no agrega el equipo. |
+| Seleccionar un equipo de la tabla. | Sus datos se cargan en el formulario. | Correcto: al seleccionar EQ-002 se cargan código, nombre, categoría, estado, responsable, días y observaciones. |
+| Modificar un equipo seleccionado. | Se actualiza conservando su código, sin duplicarlo. | Correcto: se modificaron las observaciones de EQ-001, se mostró «Equipo EQ-001 modificado correctamente» y no se duplicó. |
+| Modificar sin seleccionar un equipo. | Pide seleccionar un equipo de la lista. | Correcto: muestra «Seleccione un equipo de la lista para modificar». |
+| Cancelar una eliminación y confirmar otra con un equipo de prueba. | Se conserva el primero y se elimina solo el confirmado. | Correcto: al cancelar se conservó EQ-001; al confirmar se eliminó solo el equipo de prueba EQ-009. |
+| Buscar por texto (nombre o responsable). | Muestra solo los equipos que contienen el texto. | Correcto: al buscar «Javier» se muestran solo EQ-006 y EQ-007, sin distinguir mayúsculas. |
+| Filtrar por categoría y por «Solo disponibles». | Muestra solo los equipos que cumplen los criterios. | Correcto: con «Notebook» se muestran EQ-001, 005, 007 y 008; con «Solo disponibles», solo EQ-001. |
+| Limpiar el formulario. | Queda vacío, con estado «Disponible», listo para un nuevo registro. | Correcto. |
+| Crear y modificar datos, cerrar y volver a abrir. | Los cambios se recuperan desde el JSON. | Correcto: los equipos registrados y modificados aparecen al volver a abrir. |
+| Iniciar sin `equipos.json`, después de hacer una copia de respaldo. | La aplicación inicia sin errores con la tabla vacía. | Correcto. |
+| Iniciar con un JSON inválido, después de hacer una copia de respaldo. | Informa el error sin cerrar la ventana ni modificar el archivo. | Correcto: muestra «No se pudieron cargar los datos: El archivo no contiene registros JSON validos» y la ventana sigue abierta. Al intentar registrar, informa que no se puede guardar y el archivo no se reemplaza. Luego se restauró la copia. |
 
 ### Limitaciones conocidas
 
