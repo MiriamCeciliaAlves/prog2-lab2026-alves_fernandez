@@ -220,7 +220,6 @@ Pruebas manuales realizadas en Windows con Java 27.
 - Las categorías están definidas en el código; no se pueden agregar desde la
   interfaz.
 - Hay un único usuario y no se controla el acceso.
-- [COMPLETAR: otras limitaciones que encuentren al probar].
 
 ## Procedencia del código y recursos utilizados
 
@@ -240,19 +239,19 @@ Pruebas manuales realizadas en Windows con Java 27.
     con la fachada, y manejo de mensajes de error.
   - `datos/equipos.json`: datos de ejemplo del problema.
 - **Bibliotecas:** Gson 2.13.2 y Swing.
-- **Herramientas de IA:** utilizamos Claude (Anthropic) como asistente para
-  [COMPLETAR/REVISAR: por ejemplo, proponer el diseño del modelo, generar una
-  primera versión del código de las clases `Equipo`, `EstadoPrestamo`,
-  `FachadaRegistros`, `ControladorRegistros` y `VentanaPrincipal`, y redactar
-  este README]. Revisamos, ejecutamos y probamos el código, y podemos explicar
-  cada parte.
+- **Herramientas de IA:** utilizamos Claude (Anthropic) como asistente para proponer el
+  diseño del modelo y las reglas, generar una primera versión del código de `Equipo`,
+  `EstadoPrestamo`, `FachadaRegistros`, `PersistenciaRegistros` (adaptación),
+  `ControladorRegistros` y `VentanaPrincipal`, y un borrador de este README.
+  Revisamos, ejecutamos y probamos el código, y podemos explicar cada parte.
+  No utilizamos otras herramientas de IA.
 
 ## Aportes de cada integrante
 
 | Integrante | Aportes realizados |
 | --- | --- |
-| Miriam Alves | [COMPLETAR: aportes concretos] |
-| Javier Fernández | [COMPLETAR: aportes concretos] |
+| Miriam Alves | En conjunto con Javier: elección del problema y definición de atributos, categorías y reglas; instalación de Java y puesta en marcha del proyecto base; modelo (`Equipo`, `EstadoPrestamo` y validaciones); fachada (operaciones de gestión, filtro e identificador único); vista (formulario con los tres componentes nuevos y tabla); grabación del video. Individualmente: creación del repositorio en GitHub y carga de los archivos; ejecución de las pruebas registradas en la tabla. |
+| Javier Fernández | En conjunto con Miriam: elección del problema y definición de atributos, categorías y reglas; instalación de Java y puesta en marcha del proyecto base; modelo (`Equipo`, `EstadoPrestamo` y validaciones); fachada (operaciones de gestión, filtro e identificador único); vista (formulario con los tres componentes nuevos y tabla); grabación del video. Individualmente: controlador (conexión de los botones y de la selección de la tabla con la fachada, y mensajes al usuario); redacción y revisión del README. |
 
 Ambos integrantes conocemos la solución completa y participamos en el video.
 
