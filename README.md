@@ -257,4 +257,4 @@ Ambos integrantes conocemos la solución completa y participamos en el video.
 
 ## Video explicativo
 
-Enlace público: 
+Enlace público: https://drive.google.com/file/d/1ciUuLBVR1aDjxk8uGa-3PX9cebUBNKZ3/view?usp=sharing
